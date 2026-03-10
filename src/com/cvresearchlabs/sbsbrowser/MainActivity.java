@@ -1,0 +1,51 @@
+// Copyright (c) 2026 Cedar Valley Research Labs - cvresearchlabs.com
+
+package com.cvresearchlabs.sbsbrowser;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.widget.EditText;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
+public class MainActivity extends Activity {
+//    static {
+//        System.loadLibrary("hello");
+//    }
+
+//    public native String getMessage();
+    public String getMessage() { return "test67"; }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        EditText text = (EditText)findViewById(R.id.my_text);
+        text.setText(getMessage());
+        
+        findViewById(R.id.my_widget).setPadding(100, 0, getWindowWidth()/2+200, 0);
+        
+        // https://developer.android.com/develop/ui/views/layout/webapps/webview
+        WebView myWebView = (WebView)findViewById(R.id.my_webview);
+        myWebView.loadUrl("https://patents.google.com/patent/US8792189B2/");
+        myWebView.getSettings().setJavaScriptEnabled(true);
+        myWebView.setWebViewClient(new WebViewClient());
+    }
+
+    protected int getWindowWidth() {
+        // Get the display metrics
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+    
+        //@SuppressWarnings("deprecation")
+        // Get the default display metrics
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+    
+        // Return the width and height
+        //return new Pair<>(displayMetrics.widthPixels, displayMetrics.heightPixels);
+        
+        return displayMetrics.widthPixels;
+    }
+}
+
