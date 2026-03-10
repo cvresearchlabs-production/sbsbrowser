@@ -5,6 +5,7 @@
           versionCode="1"
           versionName="0.1">
     <uses-sdk android:minSdkVersion="23"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <application android:label="SBSBrowser">
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
