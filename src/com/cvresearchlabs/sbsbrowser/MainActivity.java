@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
         
         // https://developer.android.com/develop/ui/views/layout/webapps/webview
         WebView myWebView = (WebView)findViewById(R.id.my_webview);
-        myWebView.loadUrl("https://patents.google.com/patent/US8792189B2/");
+        myWebView.loadUrl("https://www.google.com/");
         myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.setWebViewClient(new WebViewClient());
     }
