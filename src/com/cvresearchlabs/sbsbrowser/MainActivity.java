@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
         
         // https://developer.android.com/develop/ui/views/layout/webapps/webview
         WebView myWebView = (WebView)findViewById(R.id.my_webview);
-        myWebView.loadUrl("https://www.google.com/");
+        myWebView.loadUrl("https://duckduckgo.com/?q=international+women's+day");
         myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.setWebViewClient(new WebViewClient());
     }
