@@ -1,4 +1,4 @@
-// Copyright (c) 2026 Cedar Valley Research Labs - cvresearchlabs.com
+// Copyright (c) 2026 Cedar Valley Research Labs, L.L.C. - cvresearchlabs.com
 
 package com.cvresearchlabs.sbsbrowser;
 
