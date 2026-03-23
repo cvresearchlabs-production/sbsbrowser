@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
         
         EditText text = (EditText)findViewById(R.id.my_text);
         text.setText(getMessage());
+        text.setVisibility(EditText.INVISIBLE);
         
         findViewById(R.id.my_widget).setPadding(100, 0, getWindowWidth()/2+200, 0);
         
