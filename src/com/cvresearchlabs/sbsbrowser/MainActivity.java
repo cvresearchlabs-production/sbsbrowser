@@ -11,11 +11,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class MainActivity extends Activity {
-//    static {
-//        System.loadLibrary("hello");
-//    }
-
-//    public native String getMessage();
     public String getMessage() { return "test67"; }
 
     @Override
