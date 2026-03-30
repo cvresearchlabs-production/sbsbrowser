@@ -5,22 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="fill"
-    android:orientation="vertical"
-    android:id="@+id/my_widget">
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="For VR Headsets\nFree Open Source Software\nhttps://github.com/cvresearchlabs-production/sbsbrowser" />
+        android:text="https://github.com/cvresearchlabs-production/sbsbrowser\nFree Open Source Software\nFor VR Headsets" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:id="@+id/my_text"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill"
+        android:orientation="vertical"
+        android:id="@+id/my_widget">
 
-    <WebView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/my_webview"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/my_text"/>
+
+        <WebView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_webview"/>
+    </LinearLayout>
+
 </LinearLayout>
